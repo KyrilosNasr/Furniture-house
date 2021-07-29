@@ -4,15 +4,14 @@
 
 export const environment = {
   production: false,
-  firebase: {
-    apiKey: 'AIzaSyCcz_24PvVAlimzbimeE_Do7Xq09epGYjs',
-    authDomain: 'furnture-house.firebaseapp.com',
-    databaseURL: 'https://furnture-house-default-rtdb.firebaseio.com',
-    projectId: 'furnture-house',
-    storageBucket: 'furnture-house.appspot.com',
-    messagingSenderId: '788319329682',
-    appId: '1:788319329682:web:055057014ac87f9379754b',
-    measurementId: 'G-E9B5VGLVCP',
+  firebaseConfig: {
+    apiKey: 'AIzaSyBYRvcQoVdXi5MBBZI40aU4VJs0SFlMq1E',
+    authDomain: 'furniture-house-6121e.firebaseapp.com',
+    projectId: 'furniture-house-6121e',
+    storageBucket: 'furniture-house-6121e.appspot.com',
+    messagingSenderId: '696599994337',
+    appId: '1:696599994337:web:6e488c13c59b4f259d3ca0',
+    measurementId: 'G-PKXNF5TDJ8',
   },
 };
 

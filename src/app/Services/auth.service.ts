@@ -7,16 +7,19 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class AuthService {
+  userId: string = '';
   userState: Observable<firebase.User>;
 
-  constructor(private afAuth: AngularFireAuth) {}
+  constructor(private afAuth: AngularFireAuth) {
+    this.userState = afAuth.user;
+  }
 
   signUp(email, password) {
     return this.afAuth.createUserWithEmailAndPassword(email, password);
   }
 
-  login(emal, password) {
-    return this.afAuth.signInWithEmailAndPassword(emal, password);
+  login(email, password) {
+    return this.afAuth.signInWithEmailAndPassword(email, password);
   }
 
   logout() {
