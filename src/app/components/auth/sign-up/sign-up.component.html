@@ -26,7 +26,8 @@
     <input class="form-control" ngModel #address="ngModel" name="address" placeholder="address" type="text" required>
     <div class="alert alert-danger" *ngIf="address.invalid && address.touched"> Address Is Required</div>
 
-    <button id="signup" class="btn btn-outline-primary || password.value 1== confPass.value" [disabled]="f.invalid">
+    <button routerLink="/login" (click)="signup(f)" type="button" id="signup"
+      class="btn btn-outline-primary || password.value 1== confPass.value" [disabled]="f.invalid">
       Sign me Up</button>
 
   </form>

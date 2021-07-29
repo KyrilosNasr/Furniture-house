@@ -1,6 +1,6 @@
 <div class="body">
-    <h2 class="text-center">Register</h2>
-    <form #f="ngForm">
+    <h2 class="text-center">Login</h2>
+    <form #f="ngForm" (ngSubmit)="login(f)">
 
         <input class="form-control" ngModel name="email" #email="ngModel" placeholder="your Email" type="email" required
             email>
@@ -16,8 +16,8 @@
             least 6characters</div>
 
 
-        <button id="signup" class="btn btn-outline-primary || password.value 1== confPass.value"
-            [disabled]="f.invalid">Login</button>
+        <button (click)="login(f)" id="signup" class="btn btn-outline-primary || password.value 1== confPass.value"
+            [disabled]="f.invalid" type="button">Login</button>
 
     </form>
 </div>

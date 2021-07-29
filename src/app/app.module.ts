@@ -15,6 +15,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -32,8 +33,17 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFirestoreModule,
     FormsModule,
-    AngularFireModule,
+    AngularFireModule.initializeApp({
+      apiKey: 'AIzaSyBYRvcQoVdXi5MBBZI40aU4VJs0SFlMq1E',
+      authDomain: 'furniture-house-6121e.firebaseapp.com',
+      projectId: 'furniture-house-6121e',
+      storageBucket: 'furniture-house-6121e.appspot.com',
+      messagingSenderId: '696599994337',
+      appId: '1:696599994337:web:6e488c13c59b4f259d3ca0',
+      measurementId: 'G-PKXNF5TDJ8',
+    }),
     AngularFireAuthModule,
   ],
   providers: [],
